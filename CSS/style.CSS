@@ -1,9 +1,13 @@
 :root{
 
-    --black: #000;
-    --white: #fff;
-    --black-title: #333333;
-    --grey-text: #B6B6B6;
-    --link-red: #F38181;
+    --link-active: #F38181;
+    --link-noactive: #95E1D3;
+    --line-color: #F38181;
+    --logo-color: #95E1D3;
+    --primary-title: #333;
+    --primary-text: #888;
+    --btn-color-text: #fff;
+    --primary-btn-background-color: #95E1D3;
+    --copyright-color: #F38181;
 
 }
