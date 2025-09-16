@@ -68,6 +68,7 @@ button {
 .header {
   display: flex;
   padding-top: 17px;
+  padding-bottom: 68px;
 }
 
 .header-container {
@@ -87,20 +88,19 @@ button {
   align-items: center;
 }
 
-.header-nav-list {
+.header-list {
   display: flex;
   gap: 55px;
-  margin-left: 632px;
 }
 
-.header-item-link {
+.header-link {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   color: var(--link-noactive);
 }
 
-.header-item-link:hover {
+.header-link:hover {
   color: var(--link-active);
   border-bottom: 3px solid var(--link-active);
 }
@@ -136,7 +136,7 @@ button {
   width: 60px;
   height: 4px;
   background-color: var(--line-color);
-  display: flex;
+  text-align: center;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -145,10 +145,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
-  flex-basis: calc((100% - 100px) / 2);
 }
 
-.service-list-article {
+.service-article {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -160,7 +159,12 @@ button {
   flex-basis: calc((100% - 70px) / 3);
 }
 
-.service-item-title {
+.service-item{
+  display: flex;
+  flex-basis: calc((100% - 100px) / 2);
+}
+
+.service-subtitle {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -169,7 +173,7 @@ button {
   margin-bottom: 20px;
 }
 
-.service-item-text {
+.service-text {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 15px;
@@ -178,12 +182,16 @@ button {
 }
 
 
-.service-item-image {
+.service-image {
   margin-bottom: 40px;
   display: inline-block;
 }
 
 /* team settings */
+
+.team{
+  padding-bottom: 80px;
+}
 
 .team-desc {
   font-family: var(--third-family);
@@ -199,11 +207,9 @@ button {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 30px;
-  font-variant: all-small-caps;
   color: var(--primary-title);
-  display: flex;
-  justify-content: center;
-  margin-bottom: 85px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 .team-text {
@@ -221,7 +227,7 @@ button {
   gap: 30px;
 }
 
-.team-item-title {
+.item-title {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -232,7 +238,7 @@ button {
   margin-bottom: 11px;
 }
 
-.team-item-text {
+.item-text {
   font-family: var(--second-family);
   font-style: italic;
   font-weight: 300;
@@ -249,7 +255,7 @@ button {
   height: 4px;
   background-color: var(--line-color);
   display: flex;
-
+  margin: 0 auto;
   margin-top: 40px;
 }
 
@@ -257,8 +263,15 @@ button {
 
 .footer {
   border-top: 1px solid var(--primary-text);
-  width: 1200px;
   margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-copyright {
